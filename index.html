@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>NusaFlow POS - Download</title>
+  <title>NusaFlow POS — Download</title>
+
+  <meta
+    name="description"
+    content="Download NusaFlow POS untuk Android. Solusi kasir sederhana, cepat, dan praktis untuk bisnis."
+  >
 
   <style>
     * {
@@ -14,80 +19,114 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(135deg, #0f766e, #134e4a);
       color: white;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     .container {
-      max-width: 700px;
       width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
       text-align: center;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 50px 30px;
-      border-radius: 25px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
     }
+
+    /* =========================
+       HEADER
+    ========================= */
 
     .logo {
       width: 90px;
       height: 90px;
-      margin: 0 auto 20px;
+      margin: 20px auto;
       background: white;
       color: #0f766e;
-      border-radius: 22px;
+      border-radius: 24px;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       font-size: 32px;
       font-weight: bold;
+
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
+      font-size: 44px;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
     }
 
-    .subtitle {
-      font-size: 18px;
+    .tagline {
+      font-size: 19px;
       line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto 35px;
       opacity: 0.9;
-      margin-bottom: 35px;
     }
 
-    .download-card {
+    /* =========================
+       DOWNLOAD CARD
+    ========================= */
+
+    .card {
       background: white;
       color: #1f2937;
-      border-radius: 20px;
-      padding: 25px;
-      margin-top: 20px;
+      border-radius: 24px;
+      padding: 35px 30px;
+
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+      margin-bottom: 25px;
     }
 
-    .download-card h2 {
+    .card h2 {
+      font-size: 27px;
       margin-bottom: 10px;
     }
 
-    .download-card p {
+    .card-description {
       color: #6b7280;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    .version {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #0f766e;
+
+      padding: 7px 14px;
+      border-radius: 20px;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      margin-bottom: 22px;
     }
 
     .download-button {
       display: inline-block;
+
       background: #0f766e;
       color: white;
+
       text-decoration: none;
-      padding: 15px 28px;
-      border-radius: 12px;
-      font-size: 17px;
+
+      padding: 16px 32px;
+
+      border-radius: 13px;
+
+      font-size: 18px;
       font-weight: bold;
-      transition: 0.3s;
+
+      transition: 0.25s;
+
+      box-shadow: 0 8px 20px rgba(15,118,110,0.25);
     }
 
     .download-button:hover {
@@ -95,10 +134,121 @@
       transform: translateY(-2px);
     }
 
+    .file-info {
+      margin-top: 18px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+      background: rgba(255,255,255,0.10);
+      border-radius: 22px;
+      padding: 30px 25px;
+      margin-bottom: 25px;
+      backdrop-filter: blur(8px);
+    }
+
+    .features h2 {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.10);
+      padding: 14px;
+      border-radius: 12px;
+
+      text-align: left;
+      font-size: 15px;
+    }
+
+    /* =========================
+       INSTALLATION
+    ========================= */
+
+    .install {
+      background: white;
+      color: #1f2937;
+
+      border-radius: 22px;
+      padding: 30px 25px;
+
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .install h2 {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .install ol {
+      padding-left: 22px;
+      color: #4b5563;
+      line-height: 1.8;
+    }
+
+    .warning {
+      margin-top: 18px;
+      padding: 14px;
+
+      background: #fff7ed;
+      color: #9a3412;
+
+      border-radius: 10px;
+
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     .footer {
-      margin-top: 30px;
+      padding: 20px 0 10px;
+
       font-size: 14px;
       opacity: 0.75;
+
+      line-height: 1.7;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 28px 20px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .download-button {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -107,35 +257,149 @@
 
   <div class="container">
 
-    <div class="logo">NF</div>
+    <!-- LOGO -->
+
+    <div class="logo">
+      NF
+    </div>
+
+
+    <!-- HEADER -->
 
     <h1>NusaFlow POS</h1>
 
-    <p class="subtitle">
-      Kelola bisnis Anda dengan lebih mudah, cepat, dan praktis.
-      NusaFlow membantu Anda mengelola transaksi, produk, stok,
-      dan aktivitas bisnis dalam satu aplikasi.
+    <p class="tagline">
+      Kelola bisnis dengan lebih mudah, cepat, dan praktis.
+      NusaFlow membantu Anda mengelola transaksi, produk,
+      stok, dan aktivitas bisnis dalam satu aplikasi.
     </p>
 
-    <div class="download-card">
+
+    <!-- DOWNLOAD -->
+
+    <div class="card">
 
       <h2>📱 NusaFlow Mobile</h2>
 
-      <p>
-        Download aplikasi NusaFlow POS untuk Android.
+      <p class="card-description">
+        Aplikasi kasir NusaFlow POS untuk perangkat Android.
       </p>
+
+      <div class="version">
+        Versi 1.0.0 · Android
+      </div>
+
+      <br>
 
       <a
         href="https://github.com/16Maskurhadi/nusaflow-download/releases/download/v1.0.0/app-release.apk"
         class="download-button"
       >
-        ⬇ Download APK
+        ↓ Download APK
       </a>
+
+      <div class="file-info">
+        Gratis · APK Release · ±59 MB
+      </div>
 
     </div>
 
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+      <h2>✨ Fitur Utama</h2>
+
+      <div class="feature-grid">
+
+        <div class="feature">
+          🛒 <strong>Kasir</strong><br>
+          Kelola transaksi dengan cepat.
+        </div>
+
+        <div class="feature">
+          📦 <strong>Produk & Stok</strong><br>
+          Kelola produk, kategori, dan stok.
+        </div>
+
+        <div class="feature">
+          📊 <strong>Dashboard</strong><br>
+          Pantau aktivitas dan penjualan.
+        </div>
+
+        <div class="feature">
+          🧾 <strong>Struk</strong><br>
+          Cetak struk melalui Bluetooth printer.
+        </div>
+
+        <div class="feature">
+          📈 <strong>Laporan</strong><br>
+          Lihat dan ekspor data transaksi.
+        </div>
+
+        <div class="feature">
+          💾 <strong>Backup Database</strong><br>
+          Backup dan restore data bisnis.
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- INSTALLATION -->
+
+    <div class="install">
+
+      <h2>📲 Cara Instalasi</h2>
+
+      <ol>
+
+        <li>
+          Tekan tombol <strong>Download APK</strong>.
+        </li>
+
+        <li>
+          Tunggu sampai proses download selesai.
+        </li>
+
+        <li>
+          Buka file APK yang sudah didownload.
+        </li>
+
+        <li>
+          Jika Android meminta izin,
+          aktifkan instalasi dari sumber ini.
+        </li>
+
+        <li>
+          Tekan <strong>Install</strong>.
+        </li>
+
+      </ol>
+
+      <div class="warning">
+        ⚠️ NusaFlow didistribusikan langsung dalam format APK.
+        Android mungkin menampilkan peringatan keamanan karena
+        aplikasi belum didistribusikan melalui Google Play Store.
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
     <div class="footer">
-      © 2026 NusaFlow POS
+
+      <strong>NusaFlow POS</strong><br>
+
+      Solusi kasir sederhana untuk bisnis Anda.
+
+      <br><br>
+
+      © 2026 NusaFlow POS · All rights reserved.
+
     </div>
 
   </div>
