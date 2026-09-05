@@ -3,403 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>NusaFlow POS — Download</title>
-
-  <meta
-    name="description"
-    content="Download NusaFlow POS untuk Android. Solusi kasir sederhana, cepat, dan praktis untuk bisnis."
-  >
-
+  <meta name="theme-color" content="#0f766e">
+  <title>NusaFlow POS — Kasir Modern untuk Bisnis</title>
+  <meta name="description" content="Download NusaFlow POS untuk Android. Kelola transaksi, produk, stok, laporan, dan cetak struk dalam satu aplikasi.">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f766e, #134e4a);
-      color: white;
-      min-height: 100vh;
-      padding: 30px 20px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 760px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
-
-   .logo {
-  width: 280px;
-  margin: 10px auto 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-    h1 {
-      font-size: 44px;
-      margin-bottom: 12px;
-      letter-spacing: -1px;
-    }
-
-    .tagline {
-      font-size: 19px;
-      line-height: 1.6;
-      max-width: 650px;
-      margin: 0 auto 35px;
-      opacity: 0.9;
-    }
-
-    /* =========================
-       DOWNLOAD CARD
-    ========================= */
-
-    .card {
-      background: white;
-      color: #1f2937;
-      border-radius: 24px;
-      padding: 35px 30px;
-
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-
-      margin-bottom: 25px;
-    }
-
-    .card h2 {
-      font-size: 27px;
-      margin-bottom: 10px;
-    }
-
-    .card-description {
-      color: #6b7280;
-      margin-bottom: 22px;
-      line-height: 1.6;
-    }
-
-    .version {
-      display: inline-block;
-      background: #ecfdf5;
-      color: #0f766e;
-
-      padding: 7px 14px;
-      border-radius: 20px;
-
-      font-size: 14px;
-      font-weight: bold;
-
-      margin-bottom: 22px;
-    }
-
-    .download-button {
-      display: inline-block;
-
-      background: #0f766e;
-      color: white;
-
-      text-decoration: none;
-
-      padding: 16px 32px;
-
-      border-radius: 13px;
-
-      font-size: 18px;
-      font-weight: bold;
-
-      transition: 0.25s;
-
-      box-shadow: 0 8px 20px rgba(15,118,110,0.25);
-    }
-
-    .download-button:hover {
-      background: #115e59;
-      transform: translateY(-2px);
-    }
-
-    .file-info {
-      margin-top: 18px;
-      color: #6b7280;
-      font-size: 14px;
-    }
-
-    /* =========================
-       FEATURES
-    ========================= */
-
-    .features {
-      background: rgba(255,255,255,0.10);
-      border-radius: 22px;
-      padding: 30px 25px;
-      margin-bottom: 25px;
-      backdrop-filter: blur(8px);
-    }
-
-    .features h2 {
-      font-size: 24px;
-      margin-bottom: 22px;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .feature {
-      background: rgba(255,255,255,0.10);
-      padding: 14px;
-      border-radius: 12px;
-
-      text-align: left;
-      font-size: 15px;
-    }
-
-    /* =========================
-       INSTALLATION
-    ========================= */
-
-    .install {
-      background: white;
-      color: #1f2937;
-
-      border-radius: 22px;
-      padding: 30px 25px;
-
-      text-align: left;
-      margin-bottom: 25px;
-    }
-
-    .install h2 {
-      text-align: center;
-      margin-bottom: 18px;
-    }
-
-    .install ol {
-      padding-left: 22px;
-      color: #4b5563;
-      line-height: 1.8;
-    }
-
-    .warning {
-      margin-top: 18px;
-      padding: 14px;
-
-      background: #fff7ed;
-      color: #9a3412;
-
-      border-radius: 10px;
-
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer {
-      padding: 20px 0 10px;
-
-      font-size: 14px;
-      opacity: 0.75;
-
-      line-height: 1.7;
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 600px) {
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .tagline {
-        font-size: 16px;
-      }
-
-      .card {
-        padding: 28px 20px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .download-button {
-        width: 100%;
-      }
-    }
+    :root{--blue:#2563eb;--teal:#0f766e;--green:#16a34a;--ink:#102a2a;--muted:#64748b;--white:#fff;--shadow:0 24px 70px rgba(15,23,42,.16)}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#f8fffe;overflow-x:hidden}a{text-decoration:none;color:inherit}
+    .page{min-height:100vh;background:radial-gradient(circle at 12% 8%,rgba(59,130,246,.24),transparent 28%),radial-gradient(circle at 88% 20%,rgba(34,197,94,.20),transparent 28%),linear-gradient(135deg,#0b4f78 0%,#0f766e 46%,#087f5b 100%);position:relative}.page:after{content:"";position:absolute;inset:auto -10% -90px;height:220px;background:#f8fffe;border-radius:50% 50% 0 0/100% 100% 0 0}
+    .nav{width:min(1160px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between;padding:22px 0;color:#fff;position:relative;z-index:3}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}.brand-mark{width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.16);display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);font-weight:900}.navlinks{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}.navlinks a{opacity:.88}.navlinks a:hover{opacity:1}.nav-cta{padding:11px 17px;border-radius:12px;background:#fff;color:var(--teal)!important;box-shadow:0 8px 25px rgba(0,0,0,.12);opacity:1!important}
+    .hero{width:min(1160px,calc(100% - 40px));margin:auto;min-height:690px;padding:55px 0 130px;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:2;color:#fff}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);font-size:13px;font-weight:700;backdrop-filter:blur(12px);margin-bottom:22px}.dot{width:8px;height:8px;border-radius:50%;background:#86efac;box-shadow:0 0 0 5px rgba(134,239,172,.12)}h1{font-size:clamp(46px,6vw,76px);line-height:.98;letter-spacing:-3px;max-width:720px}.accent{color:#a7f3d0}.hero-text{font-size:19px;line-height:1.7;color:rgba(255,255,255,.86);max-width:650px;margin:25px 0 30px}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}.download{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:var(--teal);padding:16px 23px;border-radius:14px;font-weight:800;box-shadow:0 14px 35px rgba(0,0,0,.18);transition:.2s}.download:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.22)}.outline{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border-radius:14px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);font-weight:700;backdrop-filter:blur(10px)}.mini-stats{display:flex;gap:24px;margin-top:34px;flex-wrap:wrap}.mini-stat strong{display:block;font-size:18px}.mini-stat span{font-size:12px;color:rgba(255,255,255,.7)}
+    .visual{display:flex;justify-content:center;position:relative}.glow{position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.13);filter:blur(2px)}.phone{position:relative;width:285px;height:570px;border:9px solid #102a2a;border-radius:42px;background:#f8fffe;box-shadow:0 35px 80px rgba(0,0,0,.3);overflow:hidden;transform:rotate(3deg)}.phone:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:110px;height:25px;background:#102a2a;border-radius:0 0 18px 18px;z-index:4}.screen{height:100%;padding:46px 18px 18px;background:linear-gradient(#ecfeff,#f8fffe)}.appbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.appname{font-size:16px;font-weight:900;color:#0f766e}.avatar{width:30px;height:30px;border-radius:50%;background:#d1fae5}.dash-card{background:#fff;border:1px solid #dbeafe;border-radius:16px;padding:16px;box-shadow:0 8px 25px rgba(15,118,110,.08);margin-bottom:12px}.dash-card small{color:#64748b}.amount{font-size:25px;font-weight:900;margin-top:5px}.bars{height:120px;display:flex;align-items:end;gap:9px;padding-top:12px}.bar{flex:1;border-radius:7px 7px 3px 3px;background:linear-gradient(#34d399,#0f766e)}.b1{height:42%}.b2{height:66%}.b3{height:53%}.b4{height:83%}.b5{height:70%}.b6{height:95%}.b7{height:62%}.product-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid #e2e8f0;font-size:12px}.pill{font-weight:800;color:#0f766e;background:#ecfdf5;padding:4px 7px;border-radius:8px}
+    .content{background:#f8fffe;position:relative;z-index:2;padding:35px 0 80px}.section{width:min(1120px,calc(100% - 40px));margin:auto}.section-head{text-align:center;max-width:700px;margin:0 auto 40px}.kicker{color:var(--teal);font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:900}h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;margin-top:8px}.section-head p{color:var(--muted);line-height:1.7;margin-top:12px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border:1px solid #dff4ef;border-radius:22px;padding:25px;box-shadow:0 12px 35px rgba(15,118,110,.07);transition:.2s}.feature:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.icon{width:48px;height:48px;border-radius:14px;background:#ecfdf5;display:grid;place-items:center;font-size:23px;margin-bottom:16px}.feature h3{font-size:18px;margin-bottom:8px}.feature p{color:var(--muted);line-height:1.6;font-size:14px}
+    .download-box{margin:75px auto 0;max-width:980px;background:linear-gradient(135deg,#ecfeff,#ecfdf5);border:1px solid #bfe9df;border-radius:30px;padding:35px;display:grid;grid-template-columns:1fr 190px;gap:30px;align-items:center;box-shadow:var(--shadow)}.download-box h2{font-size:34px}.download-box p{color:var(--muted);line-height:1.65;margin:10px 0 20px}.meta{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}.meta span{background:#fff;border:1px solid #dbeafe;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:700}.qr{background:#fff;border-radius:20px;padding:14px;box-shadow:0 10px 25px rgba(15,23,42,.1);text-align:center}.qr img{width:100%;display:block;border-radius:8px}.qr small{display:block;color:var(--muted);margin-top:8px;font-size:10px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}.step{display:flex;gap:13px;padding:20px;background:#fff;border:1px solid #e2e8f0;border-radius:18px}.num{min-width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:900}.step strong{display:block;margin-bottom:5px}.step p{font-size:13px;color:var(--muted);line-height:1.55}.warning{margin-top:30px;padding:16px 18px;border-radius:15px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;font-size:13px;line-height:1.6}footer{margin-top:75px;padding:30px 0;border-top:1px solid #dcefeb;color:#64748b;font-size:13px}.footer-inner{width:min(1120px,calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer strong{color:#0f766e}
+    @media(max-width:850px){.navlinks a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:35px;min-height:auto}.hero-text{margin-left:auto;margin-right:auto}.hero-actions,.mini-stats{justify-content:center}.visual{margin-top:20px}.phone{width:245px;height:490px}.features{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}}
+    @media(max-width:600px){.nav,.hero,.section{width:min(100% - 28px,1160px)}.nav{padding-top:16px}.brand{font-size:17px}.nav-cta{padding:9px 12px}h1{letter-spacing:-2px}.hero{padding-bottom:90px}.hero-text{font-size:16px}.download,.outline{width:100%}.features{grid-template-columns:1fr}.download-box{grid-template-columns:1fr;padding:24px;text-align:center}.download-box .download{width:auto}.qr{width:160px;margin:auto}.meta{justify-content:center}.phone{width:225px;height:450px}.footer-inner{justify-content:center;text-align:center}}
   </style>
 </head>
-
 <body>
-
-  <div class="container">
-
-    <!-- LOGO -->
-
-   <div class="logo">
-  <img src="logo nusa flow.png" alt="NusaFlow POS">
+<div class="page">
+  <nav class="nav">
+    <a class="brand" href="#"><span class="brand-mark">NF</span><span>NusaFlow POS</span></a>
+    <div class="navlinks"><a href="#fitur">Fitur</a><a href="#panduan">Panduan</a><a class="nav-cta" href="https://github.com/16Maskurhadi/nusaflow-download/releases/download/v1.0.0/app-release.apk">Download APK</a></div>
+  </nav>
+  <main class="hero">
+    <section>
+      <div class="eyebrow"><span class="dot"></span> Aplikasi Kasir Android • Versi 1.0.0</div>
+      <h1>Solusi kasir modern untuk <span class="accent">usaha Anda.</span></h1>
+      <p class="hero-text">Alur transaksi lebih rapi, usaha lebih mudah. NusaFlow membantu mengelola kasir, produk, stok, laporan, hingga cetak struk dalam satu aplikasi.</p>
+      <div class="hero-actions"><a class="download" href="https://github.com/16Maskurhadi/nusaflow-download/releases/download/v1.0.0/app-release.apk">↓ &nbsp;Download APK</a><a class="outline" href="#fitur">Lihat Fitur →</a></div>
+      <div class="mini-stats"><div class="mini-stat"><strong>Android</strong><span>Platform</span></div><div class="mini-stat"><strong>±59 MB</strong><span>Ukuran APK</span></div><div class="mini-stat"><strong>Gratis</strong><span>Untuk digunakan</span></div></div>
+    </section>
+    <div class="visual" aria-label="Ilustrasi aplikasi NusaFlow"><div class="glow"></div><div class="phone"><div class="screen"><div class="appbar"><div class="appname">NusaFlow</div><div class="avatar"></div></div><div class="dash-card"><small>Penjualan Hari Ini</small><div class="amount">Rp 4.850.000</div><div class="bars"><i class="bar b1"></i><i class="bar b2"></i><i class="bar b3"></i><i class="bar b4"></i><i class="bar b5"></i><i class="bar b6"></i><i class="bar b7"></i></div></div><div class="dash-card"><small>Transaksi Terbaru</small><div class="product-row"><span>Ayam Geprek</span><span class="pill">Rp 25K</span></div><div class="product-row"><span>Es Teh Manis</span><span class="pill">Rp 8K</span></div><div class="product-row"><span>Nasi Goreng</span><span class="pill">Rp 22K</span></div></div></div></div></div>
+  </main>
 </div>
-
-
-    <!-- HEADER -->
-
-    <h1>NusaFlow POS</h1>
-
-    <p class="tagline">
-      Kelola bisnis dengan lebih mudah, cepat, dan praktis.
-      NusaFlow membantu Anda mengelola transaksi, produk,
-      stok, dan aktivitas bisnis dalam satu aplikasi.
-    </p>
-
-
-    <!-- DOWNLOAD -->
-
-    <div class="card">
-
-      <h2>📱 NusaFlow Mobile</h2>
-
-      <p class="card-description">
-        Aplikasi kasir NusaFlow POS untuk perangkat Android.
-      </p>
-
-      <div class="version">
-        Versi 1.0.0 · Android
-      </div>
-
-      <br>
-
-      <a
-        href="https://github.com/16Maskurhadi/nusaflow-download/releases/download/v1.0.0/app-release.apk"
-        class="download-button"
-      >
-        ↓ Download APK
-      </a>
-
-      <div class="file-info">
-        Gratis · APK Release · ±59 MB
-      </div>
-
-    </div>
-
-
-    <!-- FEATURES -->
-
-    <div class="features">
-
-      <h2>✨ Fitur Utama</h2>
-
-      <div class="feature-grid">
-
-        <div class="feature">
-          🛒 <strong>Kasir</strong><br>
-          Kelola transaksi dengan cepat.
-        </div>
-
-        <div class="feature">
-          📦 <strong>Produk & Stok</strong><br>
-          Kelola produk, kategori, dan stok.
-        </div>
-
-        <div class="feature">
-          📊 <strong>Dashboard</strong><br>
-          Pantau aktivitas dan penjualan.
-        </div>
-
-        <div class="feature">
-          🧾 <strong>Struk</strong><br>
-          Cetak struk melalui Bluetooth printer.
-        </div>
-
-        <div class="feature">
-          📈 <strong>Laporan</strong><br>
-          Lihat dan ekspor data transaksi.
-        </div>
-
-        <div class="feature">
-          💾 <strong>Backup Database</strong><br>
-          Backup dan restore data bisnis.
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- INSTALLATION -->
-
-    <div class="install">
-
-      <h2>📲 Cara Instalasi</h2>
-
-      <ol>
-
-        <li>
-          Tekan tombol <strong>Download APK</strong>.
-        </li>
-
-        <li>
-          Tunggu sampai proses download selesai.
-        </li>
-
-        <li>
-          Buka file APK yang sudah didownload.
-        </li>
-
-        <li>
-          Jika Android meminta izin,
-          aktifkan instalasi dari sumber ini.
-        </li>
-
-        <li>
-          Tekan <strong>Install</strong>.
-        </li>
-
-      </ol>
-
-      <div class="warning">
-        ⚠️ NusaFlow didistribusikan langsung dalam format APK.
-        Android mungkin menampilkan peringatan keamanan karena
-        aplikasi belum didistribusikan melalui Google Play Store.
-      </div>
-
-    </div>
-
-
-    <!-- FOOTER -->
-
-    <div class="footer">
-
-      <strong>NusaFlow POS</strong><br>
-
-      Solusi kasir sederhana untuk bisnis Anda.
-
-      <br><br>
-
-      © 2026 NusaFlow POS · All rights reserved.
-
-    </div>
-
-  </div>
-
+<div class="content">
+  <section class="section" id="fitur">
+    <div class="section-head"><div class="kicker">NusaFlow POS</div><h2>Semua yang dibutuhkan kasir, dalam satu aplikasi.</h2><p>Dirancang sederhana agar aktivitas operasional usaha bisa lebih cepat dan mudah dipantau.</p></div>
+    <div class="features"><article class="feature"><div class="icon">🛒</div><h3>Kasir Cepat</h3><p>Kelola keranjang dan proses transaksi dengan alur yang praktis.</p></article><article class="feature"><div class="icon">📦</div><h3>Produk & Stok</h3><p>Kelola produk, kategori, harga, serta pantau stok dalam satu tempat.</p></article><article class="feature"><div class="icon">📊</div><h3>Dashboard</h3><p>Lihat ringkasan penjualan dan aktivitas usaha secara lebih mudah.</p></article><article class="feature"><div class="icon">🧾</div><h3>Cetak Struk</h3><p>Terhubung dengan Bluetooth thermal printer untuk kebutuhan struk.</p></article><article class="feature"><div class="icon">📈</div><h3>Laporan</h3><p>Lihat histori transaksi dan ekspor data untuk kebutuhan bisnis.</p></article><article class="feature"><div class="icon">💾</div><h3>Backup Database</h3><p>Backup dan restore data agar informasi usaha lebih mudah diamankan.</p></article></div>
+    <div class="download-box"><div><div class="kicker">Siap digunakan</div><h2>Mulai kelola usaha dengan NusaFlow.</h2><p>Download APK resmi NusaFlow POS dan instal langsung di perangkat Android Anda.</p><div class="meta"><span>Versi 1.0.0</span><span>Android</span><span>±59 MB</span></div><a class="download" href="https://github.com/16Maskurhadi/nusaflow-download/releases/download/v1.0.0/app-release.apk">↓ &nbsp;Download APK</a></div><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fgithub.com%2F16Maskurhadi%2Fnusaflow-download%2Freleases%2Fdownload%2Fv1.0.0%2Fapp-release.apk" alt="QR Code download NusaFlow"><small>Scan untuk download APK</small></div></div>
+  </section>
+  <section class="section" id="panduan" style="margin-top:80px"><div class="section-head"><div class="kicker">Cara Instalasi</div><h2>Install dalam beberapa langkah.</h2><p>Setelah APK selesai diunduh, ikuti langkah sederhana berikut.</p></div><div class="steps"><div class="step"><span class="num">1</span><div><strong>Download APK</strong><p>Tekan tombol Download APK dan tunggu hingga selesai.</p></div></div><div class="step"><span class="num">2</span><div><strong>Buka file APK</strong><p>Buka file yang sudah diunduh dari perangkat Android.</p></div></div><div class="step"><span class="num">3</span><div><strong>Izinkan instalasi</strong><p>Jika diminta, izinkan pemasangan aplikasi dari sumber ini.</p></div></div><div class="step"><span class="num">4</span><div><strong>Tekan Install</strong><p>Ikuti proses instalasi sampai aplikasi NusaFlow terpasang.</p></div></div><div class="step"><span class="num">5</span><div><strong>Mulai gunakan</strong><p>Buka NusaFlow dan mulai kelola transaksi usaha Anda.</p></div></div><div class="step"><span class="num">✓</span><div><strong>Selesai</strong><p>Anda siap menggunakan NusaFlow POS.</p></div></div></div><div class="warning">⚠️ <strong>Catatan:</strong> NusaFlow didistribusikan langsung dalam format APK, bukan melalui Google Play Store. Android mungkin menampilkan peringatan keamanan saat instalasi.</div></section>
+  <footer><div class="footer-inner"><div><strong>NusaFlow POS</strong> — Alur Transaksi, Usaha Maju.</div><div>© 2026 NusaFlow POS · All rights reserved.</div></div></footer>
+</div>
 </body>
 </html>
