@@ -12,11 +12,9 @@
     html{scroll-behavior:smooth}
     body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#00478f;color:#fff}
     a{text-decoration:none;color:inherit}
-
     .hero{min-height:690px;position:relative;overflow:hidden;background:linear-gradient(135deg,#004fa6,#0088b8 48%,#00a995);padding-bottom:80px}
     .hero:before{content:"";position:absolute;width:520px;height:520px;left:-280px;top:55px;border-radius:50%;background:rgba(47,142,255,.35)}
     .hero:after{content:"";position:absolute;width:720px;height:280px;right:-280px;top:95px;border-radius:50%;background:rgba(92,230,200,.16);transform:rotate(-12deg)}
-
     .nav{width:min(1180px,calc(100% - 40px));margin:auto;height:78px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}
     .logo{width:215px;max-height:58px;object-fit:contain}
     .navlinks{display:flex;gap:30px;align-items:center;font-weight:700;font-size:14px}
@@ -24,7 +22,6 @@
     .btn-outline{border:1px solid #fff;border-radius:25px;padding:11px 19px}
     .menu-btn{display:none;border:1px solid #ffffff80;background:#ffffff12;color:#fff;border-radius:14px;width:48px;height:48px;font-size:28px;cursor:pointer}
     .mobile-menu{display:none}
-
     .hero-grid{width:min(1180px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:35px;position:relative;z-index:2}
     .copy{text-align:center;padding-top:10px}
     .hero-logo{width:min(380px,75%);margin:auto;display:block}
@@ -35,7 +32,6 @@
     .benefit{display:flex;gap:9px;align-items:center;text-align:left;padding:0 18px;border-right:1px solid #ffffff35;font-size:12px;font-weight:800}
     .benefit:last-child{border:0}
     .ico{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#12c9bc,#2576e8);font-size:21px}
-
     .phone-area{display:flex;justify-content:center;position:relative;min-height:490px;align-items:center}
     .phone{width:245px;height:460px;border:7px solid #12283b;border-radius:40px;overflow:hidden;transform:rotate(6deg);box-shadow:20px 30px 50px #00355c88;background:#0053b5;position:relative}
     .phone:before{content:"";position:absolute;z-index:3;top:0;left:50%;transform:translateX(-50%);width:100px;height:24px;border-radius:0 0 16px 16px;background:#12283b}
@@ -46,7 +42,6 @@
     .waves:after{content:"";position:absolute;bottom:28px;left:-10px;width:330px;height:120px;background:#0754ad;border-radius:55% 45% 0 0}
     .slogan{position:absolute;right:0;bottom:65px;font:italic 24px/1.15 cursive;text-align:center;transform:rotate(-8deg)}
     .slogan b{color:#55ef57}
-
     .main{background:linear-gradient(#0056a7,#003f84);padding:55px 0 85px;position:relative}
     .main:before{content:"";position:absolute;top:-65px;left:-5%;width:110%;height:120px;background:linear-gradient(175deg,transparent 48%,#00a8a0 50%,#0067b5 72%,transparent 74%)}
     .wrap{width:min(1040px,calc(100% - 30px));margin:auto;position:relative;z-index:2}
@@ -77,7 +72,6 @@
     footer h3{font-size:20px}
     footer p{font-size:13px;margin-top:5px}
     footer small{display:block;margin-top:22px;color:#ffffffcc}
-
     @media(max-width:850px){
       .navlinks{display:none}
       .menu-btn{display:block}
@@ -98,7 +92,6 @@
       .download{margin:auto}
       .qr{border-left:0;border-top:1px solid #cbdde8;padding:18px 0 0}
     }
-
     @media(max-width:550px){
       .hero{min-height:auto;padding-bottom:36px}
       .hero:before{width:360px;height:360px;left:-230px;top:90px}
@@ -134,7 +127,6 @@
       .warning{font-size:11px;line-height:1.45}
       footer{padding-top:42px}
     }
-
     @media(min-width:551px) and (max-width:850px){
       .hero-grid{padding-top:8px}
       .copy h1{font-size:46px}
@@ -146,119 +138,65 @@
 <body>
   <header class="hero">
     <nav class="nav">
-      <a href="#beranda" aria-label="UsingGrow Beranda">
-        <img class="logo" src="usinggrow-logo.png" alt="UsingGrow">
-      </a>
-
+      <a href="#beranda" aria-label="UsingGrow Beranda"><img class="logo" src="usinggrow-logo.png" alt="UsingGrow"></a>
       <div class="navlinks">
-        <a href="#beranda">Beranda</a>
-        <a href="#fitur">Fitur</a>
-        <a href="#panduan">Panduan</a>
-        <a href="#tentang">Tentang</a>
+        <a href="#beranda">Beranda</a><a href="#fitur">Fitur</a><a href="#panduan">Panduan</a><a href="#tentang">Tentang</a>
         <a class="btn-outline" href="https://github.com/16Maskurhadi/UsingGrow-Download/releases/latest/download/app-release.apk">⇩ Download APK</a>
       </div>
-
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#beranda">Beranda</a>
-        <a href="#fitur">Fitur</a>
-        <a href="#panduan">Panduan</a>
-        <a href="#tentang">Tentang</a>
+        <a href="#beranda">Beranda</a><a href="#fitur">Fitur</a><a href="#panduan">Panduan</a><a href="#tentang">Tentang</a>
         <a class="download-mobile" href="https://github.com/16Maskurhadi/UsingGrow-Download/releases/latest/download/app-release.apk">⇩ Download APK</a>
       </div>
     </nav>
-
     <div class="hero-grid" id="beranda">
       <section class="copy">
         <img class="hero-logo" src="usinggrow-logo.png" alt="UsingGrow">
         <h1>Solusi Kasir Modern<br>untuk <span class="green">Usaha Anda</span></h1>
         <p>Kelola transaksi, produk, stok, dan aktivitas bisnis dalam satu aplikasi. Lebih mudah, cepat, dan praktis.</p>
-
         <div class="benefits">
           <div class="benefit"><i class="ico">⚡</i><span>Mudah<br>Digunakan</span></div>
           <div class="benefit"><i class="ico">◈</i><span>Aman &amp;<br>Terpercaya</span></div>
           <div class="benefit"><i class="ico">▥</i><span>Mendukung<br>Pertumbuhan Usaha</span></div>
         </div>
       </section>
-
       <div class="phone-area">
-        <div class="phone">
-          <div class="phone-screen">
-            <img class="phone-logo" src="usinggrow-logo.png" alt="UsingGrow">
-            <div class="phone-tag">Dari Banyuwangi, untuk Usaha yang Terus Tumbuh.</div>
-            <div class="waves"></div>
-          </div>
-        </div>
+        <div class="phone"><div class="phone-screen"><img class="phone-logo" src="usinggrow-logo.png" alt="UsingGrow"><div class="phone-tag">Dari Banyuwangi, untuk Usaha yang Terus Tumbuh.</div><div class="waves"></div></div></div>
         <div class="slogan">Usaha<br>Lebih Maju<br>Bersama<br><b>UsingGrow ↗</b></div>
       </div>
     </div>
   </header>
-
   <main class="main">
     <div class="wrap">
       <section class="download-card">
         <div>
-          <h2>🟢 UsingGrow Mobile</h2>
-          <p>Aplikasi kasir UsingGrow untuk perangkat Android.</p>
-          <div class="version">Versi 1.0.2 • Android</div>
+          <h2>🟢 UsingGrow Mobile</h2><p>Aplikasi kasir UsingGrow untuk perangkat Android.</p><div class="version">Versi 1.0.2 • Android</div>
           <a class="download" href="https://github.com/16Maskurhadi/UsingGrow-Download/releases/latest/download/app-release.apk">⇩ &nbsp; Download APK</a>
           <div class="meta">Gratis • APK Release • ±60 MB</div>
         </div>
         <div class="qr">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fgithub.com%2F16Maskurhadi%2FUsingGrow-Download%2Freleases%2Flatest%2Fdownload%2Fapp-release.apk" alt="QR Code">
-          <p>Scan QR Code<br>untuk Download</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;data=https%3A%2F%2F16Maskurhadi.github.io%2FUsingGrow-Download%2F" alt="QR Code Download Page">
+          <p>Scan QR Code<br>untuk membuka halaman Download</p>
         </div>
       </section>
-
-      <section class="box" id="fitur">
-        <h2 class="title">⭐ Fitur Utama</h2>
-        <div class="features">
-          <article class="feature"><i class="ico">🛒</i><div><h3>Kasir</h3><p>Kelola transaksi dengan cepat.</p></div></article>
-          <article class="feature"><i class="ico">📦</i><div><h3>Produk &amp; Stok</h3><p>Kelola produk, kategori, dan stok.</p></div></article>
-          <article class="feature"><i class="ico">▥</i><div><h3>Dashboard</h3><p>Pantau aktivitas dan penjualan.</p></div></article>
-          <article class="feature"><i class="ico">▤</i><div><h3>Laporan</h3><p>Lihat dan ekspor data transaksi.</p></div></article>
-          <article class="feature"><i class="ico">▣</i><div><h3>Struk</h3><p>Cetak struk melalui Bluetooth printer.</p></div></article>
-          <article class="feature"><i class="ico">▤</i><div><h3>Backup Database</h3><p>Backup dan restore data bisnis.</p></div></article>
-        </div>
-      </section>
-
-      <section class="install" id="panduan">
-        <h2>⚙️ Cara Instalasi</h2>
-        <div class="steps">
-          <div class="step"><div class="num">1</div>Tekan tombol<br><b>Download APK.</b></div>
-          <div class="step"><div class="num">2</div>Tunggu sampai<br>download selesai.</div>
-          <div class="step"><div class="num">3</div>Buka file APK<br>yang didownload.</div>
-          <div class="step"><div class="num">4</div>Jika diminta, izinkan instalasi dari sumber ini.</div>
-          <div class="step"><div class="num">5</div>Tekan<br><b>Install.</b></div>
-        </div>
-        <div class="warning">⚠️ UsingGrow didistribusikan langsung dalam format APK. Android mungkin menampilkan peringatan keamanan karena aplikasi belum melalui Google Play Store.</div>
-      </section>
-
-      <footer id="tentang">
-        <h3>UsingGrow</h3>
-        <p>Solusi kasir sederhana untuk bisnis Anda.</p>
-        <small>© 2026 UsingGrow • All rights reserved.</small>
-      </footer>
+      <section class="box" id="fitur"><h2 class="title">⭐ Fitur Utama</h2><div class="features">
+        <article class="feature"><i class="ico">🛒</i><div><h3>Kasir</h3><p>Kelola transaksi dengan cepat.</p></div></article>
+        <article class="feature"><i class="ico">📦</i><div><h3>Produk &amp; Stok</h3><p>Kelola produk, kategori, dan stok.</p></div></article>
+        <article class="feature"><i class="ico">▥</i><div><h3>Dashboard</h3><p>Pantau aktivitas dan penjualan.</p></div></article>
+        <article class="feature"><i class="ico">▤</i><div><h3>Laporan</h3><p>Lihat dan ekspor data transaksi.</p></div></article>
+        <article class="feature"><i class="ico">▣</i><div><h3>Struk</h3><p>Cetak struk melalui Bluetooth printer.</p></div></article>
+        <article class="feature"><i class="ico">▤</i><div><h3>Backup Database</h3><p>Backup dan restore data bisnis.</p></div></article>
+      </div></section>
+      <section class="install" id="panduan"><h2>⚙️ Cara Instalasi</h2><div class="steps">
+        <div class="step"><div class="num">1</div>Tekan tombol<br><b>Download APK.</b></div><div class="step"><div class="num">2</div>Tunggu sampai<br>download selesai.</div><div class="step"><div class="num">3</div>Buka file APK<br>yang didownload.</div><div class="step"><div class="num">4</div>Jika diminta, izinkan instalasi dari sumber ini.</div><div class="step"><div class="num">5</div>Tekan<br><b>Install.</b></div>
+      </div><div class="warning">⚠️ UsingGrow didistribusikan langsung dalam format APK. Android mungkin menampilkan peringatan keamanan karena aplikasi belum melalui Google Play Store.</div></section>
+      <footer id="tentang"><h3>UsingGrow</h3><p>Solusi kasir sederhana untuk bisnis Anda.</p><small>© 2026 UsingGrow • All rights reserved.</small></footer>
     </div>
   </main>
-
   <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-      menuBtn.textContent = isOpen ? '✕' : '☰';
-    });
-
-    mobileMenu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        menuBtn.textContent = '☰';
-      });
-    });
+    const menuBtn=document.getElementById('menuBtn');const mobileMenu=document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click',()=>{const isOpen=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(isOpen));menuBtn.textContent=isOpen?'✕':'☰'});
+    mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
   </script>
 </body>
 </html>
